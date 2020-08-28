@@ -72,6 +72,7 @@ function playGame(computer_choice) {
             }
         }
     }
+    document.getElementById("btn-play").style.display = "block";
 }
 
 function restart() {
@@ -85,11 +86,12 @@ function restart() {
 
 function userWin() {
     userPoints++
-    userScoreDiv.innerHTML = `${userPoints}`;
+    userScoreDiv.innerHTML = `${userPoints} `;
 
 }
 function compuWin() {
     computerPoints++
     compuScoreDiv.innerHTML = `${computerPoints}`;
+
 }
 butttonRestart.addEventListener("click", restart);
