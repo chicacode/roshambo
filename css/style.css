@@ -17,12 +17,7 @@ body{
     text-align: center;
     margin: 0;
 }
-.fas, .far{
-    font-size: 200px;
-    color: #4e54c8;  /* fallback for old browsers */
-    color: -webkit-linear-gradient(to top, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
-    color: linear-gradient(to top, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-} 
+
 .instructions-container {
     position: relative;
     height: 85%;
@@ -30,4 +25,70 @@ body{
     box-sizing: border-box;
     padding: 20px;
     background-color: #4e54c8;
+}
+.score-container{
+    position: relative;
+    margin: 0 auto;
+    width: 250px;
+    height: 40px;
+}
+#score{
+    position: absolute;
+    text-align: center;
+    font-size: 35px;
+    width: 100%;
+    color: #ecf0f1;
+    font-weight: bold;
+}
+
+.user{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #e14a67;
+    font-size: 30px;
+    padding: 2px 10px;
+    color: #ecf0f1;
+}
+
+.computer{
+    position: absolute;
+    right:-55px;
+    top: 50%;
+    transform: translate(50%, -50%);
+    background-color: #e14a67;
+    font-size: 30px;
+    padding: 2px 10px;
+    color: #ecf0f1;
+}
+
+.buttons-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.hand-icon{
+    border: 1px solid #4e54c8;
+    border-radius: 40%;
+    padding: 20px;
+    margin: 5px;
+    outline: none;
+    transition: .35s;
+}
+.buttons-container .fas, .far{
+    padding: 20px;
+    font-size: 150px;
+    color: #4e54c8;  /* fallback for old browsers */
+    color: -webkit-linear-gradient(to top, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
+    color: linear-gradient(to top, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+} 
+.hand-icon:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    box-shadow: 5px 10px 18px #888888;
+}
+.challenge-container .user__challenge-container .far,  .computer__challenge-container .far{
+    color: #ecf0f1;
 }
