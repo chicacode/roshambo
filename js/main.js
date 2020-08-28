@@ -8,7 +8,7 @@ console.log("Conected");
     The computer wins if it chooses scissors an the user chooses paper
 
 */
-let computer_choice;
+
 let user_choice;
 let winner = "";
 let random;
@@ -17,10 +17,9 @@ let options = ["paper", "rock", "scissors"];
 // random Number fn
 function getRandomNumber() {
     random = Math.floor(Math.random() * 3)
-    let computer_choice = random;
+    let computer_choice = random; // cambiar nombre a vriable local a random_N
     playGame(computer_choice);
-    return computer_choice;
-
+    return computer_choice; // We return the value of the local variable, not the local variable itself
 }
 function playGame(computer_choice) {
 
