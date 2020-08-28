@@ -27,14 +27,21 @@
             <button class="hand-icon"><i class="far fa-hand-scissors"></i></button>
         </div>
         <div class="challenge-container">
-            <div class="user__challenge-container"><i class="far fa-hand-paper"></i></div>
-            <div class="result__challenge-container">You WIN</div>
-            <div class="computer__challenge-container"><i class="far fa-hand-rock"></i></div>
+            <div id="you">
+                <div class="user__challenge-container"><i class="far fa-hand-paper"></i></div>
+            </div>
+            <div id="result">
+                <p>
+                <div class="result">WIN</div>
+                </p>
+            </div>
+
+            <div id="com">
+                <div class="computer__challenge-container"><i class="far fa-hand-rock"></i></div>
+            </div>
         </div>
         <button onclick="getRandomNumber()">Click Me</button>
         <p id="comChoice"></p>
-        <p id="result"></p>
-
     </section>
 </body>
 <script src="js/main.js"></script>

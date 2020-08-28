@@ -91,4 +91,37 @@ body{
 }
 .challenge-container .user__challenge-container .far,  .computer__challenge-container .far{
     color: #ecf0f1;
+    font-size: 80px;
+}
+.challenge-container{
+    position: absolute;
+    top: 50%;
+    left: 36%;
+    transform: translateX(-50%, -50%);
+    width: 540px;
+    height: 40%;
+    display: inline-flex;
+}
+
+#you{
+    position: relative;
+    width: 37.5%;
+    font-size: 50px;
+}
+
+#com{
+    position: relative;
+    width: 37.5%;
+    font-size: 50px;
+}
+
+#result{
+    position: relative;
+    width: 35%;
+    font-size: 50px;
+    display: flex;
+}
+
+.result{
+    color: #ecf0f1;
 }
