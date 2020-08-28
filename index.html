@@ -14,12 +14,17 @@
 <body>
     <header class="header">
         <h1>Welcome to Roshambo's Game</h1>
+        <div class="btn-conatiner__header">
+            <button id="btn-restart" class="btn__header">RESTAR</button>
+        </div>
     </header>
     <section class="instructions-container">
         <section class="score-container">
             <span class="user">YOU</span>
-            <span id="score">0 - 0</span>
-            <span class="computer">COMPUTER</span>
+            <span class="score-user" id="user-score">0</span>
+            -
+            <span class="score-compu" id="cpu-score">0</span>
+            <span class="computer">MACHINE</span>
         </section>
         <div class="buttons-container">
             <button class="hand-icon"><i class="far fa-hand-rock"></i></button>
@@ -31,17 +36,21 @@
                 <div class="user__challenge-container"><i class="far fa-hand-paper"></i></div>
             </div>
             <div id="result">
-                <p>
-                <div class="result">WIN</div>
-                </p>
+
+                <div class="result"></div>
+
             </div>
 
             <div id="com">
                 <div class="computer__challenge-container"><i class="far fa-hand-rock"></i></div>
             </div>
+
         </div>
-        <button onclick="getRandomNumber()">Click Me</button>
+
+        <button id="btn-play" class="btn__instructions-container" onclick="getRandomNumber()">PLAY</button>
+
         <p id="comChoice"></p>
+
     </section>
 </body>
 <script src="js/main.js"></script>
